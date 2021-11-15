@@ -222,13 +222,13 @@ def makanringan():
         makanringan()
 
 def listminuman():
-    print("\n=========================================")
-    print("============= Daftar Minuman ============")
-    print("=========================================")
-    print("1. |  Bodrek   1 strip  = Rp.10.000  | --")
-    print("2. |  Paramex  1 strip  = Rp.10.000  | --")
-    print("3. |  Diapet   1 strip  = Rp.13.000  | --")
-    print("4. |  Amoxilin 1 strip  = Rp.15.000  | --")
+    print("\n===============================================")
+    print("================ Daftar Minuman ===============")
+    print("===============================================")
+    print("1. | Coca-cola       1 kiter  = Rp.10.000  | --")
+    print("2. | Prit            1 liter  = Rp.10.000  | --")
+    print("3. | Teh Gelas 220m  1 dus    = Rp.13.000  | --")
+    print("4. | Aqua 220ml      1 dus    = Rp.15.000  | --")
     print("=========================================")
     minuman = int(input("Pilih nomer pesanan : "))
     if minuman == 1:

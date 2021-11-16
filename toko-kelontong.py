@@ -268,6 +268,8 @@ def listminuman():
     
 
 def bertanya ():
+    for i in range(len(keranjang)):
+        print("==== Anda Membeli barang :",keranjang[i],"berjumlah",jumlahbarang[i])
     pilihan = input("Tambah pesanan ? y/t :")
     if pilihan == "y":
         jenisbarang()

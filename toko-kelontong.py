@@ -8,10 +8,12 @@ totalharga = []
 jumlahbarang = []
 hitung = 0
 
-print("Selamat datang di toko kami")
+print("=======================================")
+print("===== Selamat datang di toko kami =====")
+print("=======================================")
 nama_pembeli= input("Masukkan nama Anda : ")
 print ("\n===== Selamat datang Bpk/Ibu",nama_pembeli,"=====")
-print("Silahkan Memilih Jenis Barang yang ingi dibeli")
+print("Silahkan Memilih Barang yang ingi dibeli")
 
 
 def jenisbarang():
@@ -268,8 +270,12 @@ def listminuman():
     
 
 def bertanya ():
+    print("\n==================================================")
+    print("=============== K E R A N J A N G ================")
+    print("==================================================")
     for i in range(len(keranjang)):
         print("==== Anda Membeli barang :",keranjang[i],"berjumlah",jumlahbarang[i])
+    print("==================================================")
     pilihan = input("Tambah pesanan ? y/t :")
     if pilihan == "y":
         jenisbarang()
@@ -288,11 +294,14 @@ def hasil():
     print("======== S T R U K  P E M B A Y A R A N ========")
     print("================================================")
     print("==== Nama : ",nama_pembeli)
+    print("================================================")
     for i in range(len(keranjang)):
         print("==== Anda Membeli barang :",keranjang[i],"berjumlah",jumlahbarang[i])
+    print("================================================")
     jumlah = sum(totalharga)
     print("==== Jumlah pembyaran anda : Rp.",jumlah)
     uang = int(input("==== Jumlah Pembayaran Anda : Rp."))
+    print("================================================")
     kembalian = int(uang-jumlah)
     print("==== Kembalian anda : Rp.",kembalian)
 
